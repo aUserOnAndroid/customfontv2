@@ -8,6 +8,6 @@ CustomFont can import custom fonts in GD!
 * If You Are Android, iOS, Linux or Mac, Use **[Vertopal TTF To FNT Converter](https://www.vertopal.com/en/convert/ttf-to-fnt)**
 * If You Are On Windows, Use **AngelCode BMFont** (I Don't Use Windows, You Have To Figure It Out Yourself)
 ---
-Made In Github My katipli (aUserOnAndroid)
+Made In Github by katipli (aUserOnAndroid) <3
 
   
