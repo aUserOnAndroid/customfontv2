@@ -10,7 +10,7 @@
 	"name": "CustomFont",
 	"version": "v1.0.0",
 	"developer": "aUserOnAndroid",
-	"description": "A Mod That Can Change The Default Font If GD",
+	"description": "A Mod That Can Change The Default Font In GD!",
 	"dependencies": {
 		"geode.node-ids": ">=v1.23.3"
 	}
