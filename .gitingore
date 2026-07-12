@@ -1,0 +1,14 @@
+# Geode / CMake build directories
+/build/
+/.geode/
+
+# IDE specific files
+/.vs/
+/.vscode/
+/out/
+/CMakeSettings.json
+/CMakeUserPresets.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
