@@ -1,0 +1,38 @@
+name: Build Geode Mod
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+          - name: Windows
+            os: windows-2022
+          - name: Android32
+            os: ubuntu-20.04
+            target: Android32
+          - name: Android64
+            os: ubuntu-20.04
+            target: Android64
+
+    name: ${{ matrix.config.name }}
+    runs-on: ${{ matrix.config.os }}
+
+    steps:
+      - unsafe-unshallow: true
+
+      - name: Checkout CLI
+        uses: geode-sdk/cli-action@main
+        with:
+          version: v3.1.0
+
+      - name: Build Mod
+        uses: geode-sdk/build-mod-action@main
+        with:
+          target: ${{ matrix.config.target }}
